@@ -28,8 +28,16 @@ Les lectures de la messe dominicale, chargées automatiquement depuis l'API publ
 - **Quiz biblique à trois niveaux** : 🌱 Amateur, 🌿 Moyen, 🌳 Pro — avec explications et références bibliques à chaque réponse, score final et encouragements
 
 ### 🏠 Accueil (`index.html`)
-- **Verset du jour** (roulement automatique selon la date)
+- **Verset du jour** (roulement automatique selon la date) + bouton **verset surprise 🎲**
+- **Prière du jour** (roulement quotidien : Notre Père, prière du matin, du soir…)
 - Présentation des sections du site
+
+### ✨ Autres fonctionnalités
+- **Avatars cartoon au choix** pour l'assistant : Frère Théo 👨, Sœur Léa 👩 ou P'tit Sam 🧒 (dessinés en SVG, affichés à côté des bulles)
+- Ton **chaleureux et décontracté** : l'assistant tutoie et parle simplement, tout en restant 100% fidèle à la Bible
+- **Jeu memory biblique** pour les enfants (retrouve les paires de symboles)
+- **Records de quiz** sauvegardés dans le navigateur pour chaque niveau
+- Bouton **effacer la conversation** du chat
 
 ## 🚀 Lancer le site
 

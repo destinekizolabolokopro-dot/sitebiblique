@@ -25,6 +25,23 @@
   let index = 0;
   let score = 0;
 
+  // Meilleurs scores sauvegardés dans le navigateur
+  function cleRecord(n) { return "lumiere-biblique-record-" + n; }
+
+  function afficherRecords() {
+    document.querySelectorAll(".niveau-card").forEach(function (btn) {
+      const n = btn.dataset.niveau;
+      const record = localStorage.getItem(cleRecord(n));
+      let span = btn.querySelector(".niveau-record");
+      if (!span) {
+        span = document.createElement("span");
+        span.className = "niveau-record";
+        btn.appendChild(span);
+      }
+      span.textContent = record ? "🏅 Record : " + record + " / " + QUIZ[n].length : "Pas encore joué";
+    });
+  }
+
   function melanger(tableau) {
     const copie = tableau.slice();
     for (let i = copie.length - 1; i > 0; i--) {
@@ -99,6 +116,11 @@
     quizResult.style.display = "block";
     barFill.style.width = "100%";
 
+    // Enregistre le record du niveau
+    const ancien = parseInt(localStorage.getItem(cleRecord(niveau)) || "0", 10);
+    if (score > ancien) localStorage.setItem(cleRecord(niveau), String(score));
+    afficherRecords();
+
     const ratio = score / questions.length;
     if (ratio === 1) {
       resultEmoji.textContent = "🏆";
@@ -127,6 +149,7 @@
   });
 
   nextBtn.addEventListener("click", suivante);
+  afficherRecords();
   rejouerBtn.addEventListener("click", function () { demarrer(niveau); });
   changerNiveauBtn.addEventListener("click", function () {
     quizResult.style.display = "none";

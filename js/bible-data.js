@@ -76,73 +76,73 @@ const THEMES = [
   {
     nom: "la peur et l'angoisse",
     motscles: ["peur", "angoisse", "anxiete", "anxieux", "inquiet", "inquietude", "stress", "crainte", "effraye"],
-    conseil: "Mon enfant, la peur est humaine, mais souvenez-vous que le Seigneur marche avec vous. Remettez-lui vos craintes dans la prière : Il est plus grand que tout ce qui vous effraie.",
+    conseil: "Hé, respire un coup 😊 Avoir peur, c'est normal, ça arrive à tout le monde. Mais rappelle-toi : Dieu marche avec toi, littéralement. Balance-lui tes craintes dans la prière — Il est bien plus grand que tout ce qui te fait flipper.",
     versets: ["esaie 41:10", "psaume 23:4", "jean 14:27", "philippiens 4:6"],
   },
   {
     nom: "l'amour",
     motscles: ["amour", "aimer", "aime", "charite"],
-    conseil: "L'amour est au cœur de l'Évangile : Dieu nous a aimés le premier, et Il nous appelle à aimer notre prochain comme nous-mêmes.",
+    conseil: "L'amour, c'est LE cœur de l'Évangile ❤️ Dieu t'a aimé le premier, avant même que tu penses à Lui. Et du coup, Il t'invite à faire pareil : aimer les gens autour de toi comme toi-même. Simple à dire, moins simple à faire — mais tu n'es pas seul pour ça !",
     versets: ["1 jean 4:8", "1 corinthiens 13:4", "1 corinthiens 13:13", "jean 3:16", "marc 12:30"],
   },
   {
     nom: "le pardon",
     motscles: ["pardon", "pardonner", "rancune", "reconciliation", "vengeance", "offense"],
-    conseil: "Le pardon libère le cœur. Comme le Christ nous a pardonnés sur la croix, nous sommes appelés à pardonner à notre tour, non pas septante fois, mais septante fois sept fois (Matthieu 18:22).",
+    conseil: "Le pardon, c'est pas un cadeau que tu fais à l'autre — c'est toi que ça libère 🕊️ Jésus a pardonné à ceux qui le clouaient sur la croix, alors on peut faire un effort pour le pote qui nous a vexés, non ? Et pas juste une fois : soixante-dix fois sept fois, dit Jésus (Matthieu 18:22). Autrement dit : sans compter.",
     versets: ["esaie 53:5", "matthieu 6:9", "ephesiens 2:8"],
   },
   {
     nom: "la foi",
     motscles: ["foi", "croire", "crois", "doute", "douter", "confiance"],
-    conseil: "La foi grandit comme une graine de moutarde : petite au départ, elle devient un grand arbre. Nourrissez-la par la prière, la lecture de la Parole et la vie en communauté.",
+    conseil: "T'inquiète, même les plus grands saints ont eu des doutes 😉 La foi, c'est comme une graine de moutarde : minuscule au départ, énorme à l'arrivée. Nourris-la un peu chaque jour — une prière, quelques versets, du temps avec d'autres croyants — et tu verras qu'elle pousse toute seule.",
     versets: ["hebreux 11:1", "proverbes 3:5", "luc 1:37", "romains 8:28"],
   },
   {
     nom: "l'espérance et l'avenir",
     motscles: ["esperance", "espoir", "avenir", "futur", "projet", "decouragement", "decourage", "desespoir"],
-    conseil: "Ne perdez jamais espérance : Dieu a des projets de paix pour vous, et Il fait concourir toutes choses au bien de ceux qui L'aiment.",
+    conseil: "Garde la tête haute ✨ Même quand tout semble bouché, Dieu a un plan pour toi — un vrai, un bon. Il écrit droit même avec nos lignes tordues, et Il fait tout tourner au bien de ceux qui L'aiment. Le meilleur reste à venir, crois-moi.",
     versets: ["jeremie 29:11", "romains 8:28", "apocalypse 21:4"],
   },
   {
     nom: "la tristesse et le deuil",
     motscles: ["triste", "tristesse", "deuil", "pleure", "pleurer", "larmes", "chagrin", "mort", "deces", "souffrance", "souffre"],
-    conseil: "Le Seigneur est proche de ceux qui ont le cœur brisé. Dans l'épreuve, Il vous porte, et Il promet d'essuyer un jour toute larme de nos yeux. Courage : vous n'êtes pas seul.",
+    conseil: "Je suis de tout cœur avec toi 💛 Le Seigneur est tout proche de ceux qui ont le cœur brisé — c'est écrit noir sur blanc. Pleurer, c'est pas être faible : même Jésus a pleuré. Et un jour, Il essuiera toute larme de nos yeux, promis. En attendant, tu n'es pas seul : parle-Lui, et parle aussi à des gens qui t'aiment.",
     versets: ["apocalypse 21:4", "matthieu 11:28", "psaume 23:4", "1 pierre 5:7"],
   },
   {
     nom: "la paix",
     motscles: ["paix", "calme", "serenite", "repos", "tranquillite"],
-    conseil: "La paix que donne le Christ ne dépend pas des circonstances : c'est une paix du cœur, reçue dans la prière et la confiance en Dieu.",
+    conseil: "La paix de Jésus, c'est pas la paix « tout va bien dans ma vie » — c'est la paix qui tient même quand ça secoue 😌 Elle vient de l'intérieur, dans la prière et la confiance. Pose ton téléphone cinq minutes, respire, et parle-Lui : tu verras la différence.",
     versets: ["jean 14:27", "matthieu 5:9", "philippiens 4:6"],
   },
   {
     nom: "la prière",
     motscles: ["prier", "priere", "notre pere", "intercession", "comment prier"],
-    conseil: "Priez avec un cœur simple et sincère : Dieu écoute chaque prière. Jésus lui-même nous a enseigné le Notre Père, modèle de toute prière (Matthieu 6:9-13).",
+    conseil: "Prier, c'est juste parler à Dieu comme à un ami — pas besoin de grands mots compliqués 🙏 Dis-Lui merci, dis-Lui ce qui va pas, demande-Lui ce qu'il te faut. Et si tu sais pas par où commencer, Jésus nous a laissé le mode d'emploi parfait : le Notre Père (Matthieu 6:9-13).",
     versets: ["matthieu 6:9", "matthieu 7:7", "philippiens 4:6", "jacques 1:5"],
   },
   {
     nom: "la force et le courage",
     motscles: ["force", "courage", "fatigue", "epuise", "faible", "faiblesse", "abandonner"],
-    conseil: "Quand vos forces vous manquent, appuyez-vous sur le Seigneur : Sa grâce suffit, et Sa puissance s'accomplit dans la faiblesse (2 Corinthiens 12:9).",
+    conseil: "T'es à plat ? C'est justement là que Dieu fait ses meilleurs trucs 💪 Sa puissance s'accomplit dans la faiblesse (2 Corinthiens 12:9) — autrement dit, quand t'as plus de batterie, branche-toi sur la Sienne. Repose-toi, prie, et repars.",
     versets: ["philippiens 4:13", "esaie 41:10", "matthieu 11:28"],
   },
   {
     nom: "la sagesse et les décisions",
     motscles: ["sagesse", "decision", "choix", "choisir", "discernement", "conseil"],
-    conseil: "Avant toute décision, demandez la sagesse à Dieu dans la prière : Il la donne généreusement à qui la Lui demande.",
+    conseil: "Gros choix en vue ? Bonne nouvelle : la sagesse, Dieu en donne gratos à qui la demande, sans juger 😄 (Jacques 1:5). Prie, pèse le pour et le contre, demande conseil à des gens sages… et fais confiance : Il guide ceux qui Le cherchent.",
     versets: ["jacques 1:5", "proverbes 3:5", "romains 12:2"],
   },
   {
     nom: "la famille",
     motscles: ["famille", "parents", "pere", "mere", "enfants", "mariage", "epoux", "epouse", "couple"],
-    conseil: "La famille est un don de Dieu et une petite Église domestique. Cultivez-y l'amour, le respect et le pardon mutuel, à l'image de l'amour du Christ.",
+    conseil: "La famille, c'est un cadeau… même les jours où elle nous fatigue 😅 C'est là qu'on apprend à aimer pour de vrai : avec du respect, de la patience et pas mal de pardon. Prends soin des tiens comme le Christ prend soin de nous.",
     versets: ["exode 20:12", "genese 1:27", "1 corinthiens 13:4"],
   },
   {
     nom: "le salut et la grâce",
     motscles: ["salut", "sauve", "grace", "vie eternelle", "paradis", "ciel", "peche", "peches"],
-    conseil: "Le salut est un don gratuit de Dieu, reçu par la foi en Jésus-Christ, mort et ressuscité pour nous. Personne ne peut le mériter : il suffit de l'accueillir d'un cœur repentant.",
+    conseil: "Le salut, c'est le plus beau cadeau de l'histoire, et il est 100% gratuit 🎁 Pas besoin de le mériter — d'ailleurs personne ne le pourrait. Jésus a tout payé sur la croix. Toi, t'as juste à l'accueillir avec un cœur sincère et à Le suivre. C'est ça, la Bonne Nouvelle !",
     versets: ["ephesiens 2:8", "jean 3:16", "jean 14:6"],
   },
 ];
@@ -189,3 +189,42 @@ const PERSONNAGES = {
   "salomon": "Salomon, fils de David, demanda à Dieu non pas la richesse mais la sagesse pour gouverner (1 Rois 3). Il bâtit le premier Temple de Jérusalem. Les livres des Proverbes et de l'Ecclésiaste sont rattachés à sa sagesse.",
   "jean-baptiste": "Jean-Baptiste est le précurseur du Messie : « la voix qui crie dans le désert : préparez le chemin du Seigneur » (Matthieu 3:3). Il baptisait dans le Jourdain et désigna Jésus comme « l'Agneau de Dieu qui ôte le péché du monde » (Jean 1:29).",
 };
+
+// ----- Prières du jour (roulement quotidien) -----
+const PRIERES = [
+  {
+    titre: "Le Notre Père",
+    texte: "Notre Père qui es aux cieux, que ton nom soit sanctifié, que ton règne vienne, que ta volonté soit faite sur la terre comme au ciel. Donne-nous aujourd'hui notre pain de ce jour. Pardonne-nous nos offenses, comme nous pardonnons aussi à ceux qui nous ont offensés. Et ne nous laisse pas entrer en tentation, mais délivre-nous du Mal. Amen.",
+    source: "Matthieu 6:9-13",
+  },
+  {
+    titre: "Prière du matin",
+    texte: "Seigneur, merci pour cette nouvelle journée que tu me donnes. Marche avec moi, éclaire mes choix, donne-moi un cœur joyeux et attentif aux autres. Que tout ce que je ferai aujourd'hui te rende gloire. Amen.",
+    source: "Inspirée du Psaume 118:24",
+  },
+  {
+    titre: "Prière du soir",
+    texte: "Seigneur, la journée se termine et je viens me poser près de toi. Merci pour les belles choses, pardon pour mes manquements. Garde-moi cette nuit, ainsi que tous ceux que j'aime. Je m'endors en paix, car toi seul me donnes le repos. Amen.",
+    source: "Inspirée du Psaume 4:9",
+  },
+  {
+    titre: "Prière de confiance",
+    texte: "Seigneur Jésus, je dépose entre tes mains mes soucis, mes projets et mes peurs. Tu sais mieux que moi ce dont j'ai besoin. Augmente ma foi, et apprends-moi à te faire confiance un jour à la fois. Amen.",
+    source: "Inspirée de Matthieu 6:34",
+  },
+  {
+    titre: "Prière de louange",
+    texte: "Mon Dieu, tu es grand et tu es bon ! Merci pour la vie, pour la création, pour ton amour qui ne s'arrête jamais. Que mon cœur chante pour toi aujourd'hui : Alléluia ! Amen.",
+    source: "Inspirée du Psaume 150",
+  },
+  {
+    titre: "Prière pour les autres",
+    texte: "Seigneur, je te confie ma famille, mes amis, et tous ceux qui traversent une épreuve. Console ceux qui pleurent, guéris ceux qui souffrent, et donne-moi un cœur généreux pour aider autour de moi. Amen.",
+    source: "Inspirée de Galates 6:2",
+  },
+  {
+    titre: "Prière de pardon",
+    texte: "Père très bon, tu connais mon cœur. Pardonne-moi le mal que j'ai fait et le bien que je n'ai pas fait. Aide-moi aussi à pardonner à ceux qui m'ont blessé, comme toi tu me pardonnes. Rends mon cœur léger et neuf. Amen.",
+    source: "Inspirée du Psaume 51",
+  },
+];

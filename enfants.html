@@ -91,6 +91,21 @@
     </div>
   </section>
 
+  <!-- Jeu memory -->
+  <section class="section" id="memory">
+    <div class="container memory-zone">
+      <h2 class="section-title">🃏 Le memory de la Bible</h2>
+      <p class="section-subtitle">Retrouve les paires de symboles bibliques en un minimum de coups !</p>
+      <div class="memory-stats">
+        <span>Coups : <span id="memoryCoups">0</span></span>
+        <span>Paires : <span id="memoryPaires">0 / 8</span></span>
+      </div>
+      <div class="memory-grid" id="memoryGrid"></div>
+      <div class="memory-bravo" id="memoryBravo"></div>
+      <p style="margin-top:1.2rem;"><button class="btn btn-secondary btn-small" id="memoryRejouer">🔄 Nouvelle partie</button></p>
+    </div>
+  </section>
+
   <!-- Quiz -->
   <section class="section section-alt" id="quiz">
     <div class="container quiz-zone">
@@ -159,5 +174,6 @@
   <script src="js/common.js"></script>
   <script src="js/quiz-data.js"></script>
   <script src="js/quiz.js"></script>
+  <script src="js/memory.js"></script>
 </body>
 </html>

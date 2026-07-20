@@ -29,7 +29,7 @@
   <section class="page-head">
     <div class="container">
       <h1>💬 Assistant biblique</h1>
-      <p>Posez vos questions sur la Parole de Dieu : recherche de versets, étymologie des mots bibliques, personnages, conseils spirituels. Cet assistant est entièrement consacré à la Bible et à la foi chrétienne.</p>
+      <p>Pose-lui toutes tes questions sur la Bible : versets, étymologies, personnages, conseils pour la vie… Il est sympa, détendu, et 100% consacré à la Parole de Dieu.</p>
     </div>
   </section>
 
@@ -37,12 +37,23 @@
     <div class="chat-box">
       <div class="chat-messages" id="chatMessages"></div>
       <form class="chat-input-row" id="chatForm">
-        <input type="text" id="chatInput" placeholder="Écrivez votre question ici… (ex. : Que dit la Bible sur le pardon ?)" autocomplete="off" required>
+        <button type="button" class="btn btn-secondary btn-small" id="btnSurprise" title="Verset surprise">🎲</button>
+        <input type="text" id="chatInput" placeholder="Écris ta question ici… (ex. : Que dit la Bible sur le pardon ?)" autocomplete="off" required>
         <button type="submit" class="btn btn-primary btn-small">Envoyer</button>
       </form>
     </div>
 
     <aside class="chat-side">
+      <div class="side-card">
+        <h3>🎨 Choisis ton guide</h3>
+        <div class="avatar-choices">
+          <button class="avatar-choice" data-avatar="homme" title="Frère Théo"></button>
+          <button class="avatar-choice" data-avatar="femme" title="Sœur Léa"></button>
+          <button class="avatar-choice" data-avatar="enfant" title="P'tit Sam"></button>
+        </div>
+        <p class="side-note">Frère Théo, Sœur Léa ou P'tit Sam : à toi de choisir qui t'accompagne !</p>
+      </div>
+
       <div class="side-card">
         <span class="mode-badge" id="modeBadge">Mode local</span>
         <h3>Questions suggérées</h3>
@@ -53,15 +64,17 @@
           <button class="suggestion-btn" data-q="Qui est Moïse ?">Qui est Moïse ?</button>
           <button class="suggestion-btn" data-q="Comment prier ?">Comment prier ?</button>
           <button class="suggestion-btn" data-q="Que dit la Bible sur le pardon ?">Que dit la Bible sur le pardon ?</button>
+          <button class="suggestion-btn" data-q="Verset surprise !">🎲 Verset surprise !</button>
         </div>
+        <button class="btn btn-secondary btn-small" id="btnEffacer" style="margin-top:0.8rem;">🧹 Effacer la conversation</button>
       </div>
 
       <div class="side-card">
         <h3>🤖 Mode IA (facultatif)</h3>
         <p class="side-note" style="margin-bottom:0.6rem;">
           Par défaut, l'assistant répond grâce à sa bibliothèque intégrée de versets. Pour des réponses
-          approfondies générées par l'IA Claude (toujours strictement bibliques), saisissez une clé API Anthropic.
-          La clé reste uniquement dans votre navigateur.
+          approfondies générées par l'IA Claude (toujours 100% bibliques), colle une clé API Anthropic ici.
+          Elle reste uniquement dans ton navigateur.
         </p>
         <input type="password" class="api-field" id="apiKeyInput" placeholder="Clé API Anthropic (sk-ant-…)">
         <button class="btn btn-secondary btn-small" id="apiKeySave">Activer le mode IA</button>
@@ -69,14 +82,15 @@
       </div>
 
       <div class="side-card">
-        <h3>📖 Ce que sait faire l'assistant</h3>
+        <h3>📖 Ce qu'il sait faire</h3>
         <p class="side-note">
           • Trouver des versets par thème (peur, amour, pardon…)<br>
           • Afficher un verset par sa référence (ex. « Psaume 23:1 »)<br>
           • Expliquer l'étymologie des mots bibliques<br>
           • Présenter les grands personnages de la Bible<br>
-          • Donner un conseil spirituel fondé sur les Écritures<br><br>
-          Il ne répond qu'aux questions liées à la Bible et à la foi chrétienne.
+          • Offrir un verset surprise 🎲<br>
+          • Donner un conseil fondé sur les Écritures<br><br>
+          Par contre, hors Bible, il ne répond pas — c'est son truc à lui 😄
         </p>
       </div>
     </aside>

@@ -361,6 +361,57 @@ a { color: inherit; text-decoration: none; }
 
 .msg-typing { color: var(--encre-douce); font-style: italic; }
 
+/* Avatar cartoon à côté des bulles du bot */
+.msg-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.55rem;
+  align-self: flex-start;
+  max-width: 88%;
+}
+
+.msg-avatar {
+  flex: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--bordure);
+  background: var(--fond-alt);
+}
+
+.msg-avatar svg { display: block; width: 100%; height: 100%; }
+
+.msg-col { display: flex; flex-direction: column; min-width: 0; }
+
+.msg-nom {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--encre-douce);
+  margin: 0 0 3px 6px;
+}
+
+.msg-row .msg { max-width: 100%; }
+
+/* Sélecteur d'avatar */
+.avatar-choices { display: flex; gap: 0.6rem; margin-bottom: 0.6rem; }
+
+.avatar-choice {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: 3px solid var(--bordure);
+  background: var(--fond);
+  padding: 0;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.15s, border-color 0.15s;
+}
+
+.avatar-choice svg { display: block; width: 100%; height: 100%; }
+.avatar-choice:hover { transform: scale(1.08); }
+.avatar-choice.selected { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(176, 65, 62, 0.18); }
+
 .chat-input-row {
   display: flex;
   gap: 0.6rem;
@@ -672,6 +723,82 @@ a { color: inherit; text-decoration: none; }
   margin: 0 auto 1.4rem;
   max-width: 480px;
 }
+
+/* ---------- Prière du jour (accueil) ---------- */
+
+.priere-card {
+  max-width: 680px;
+  margin: 0 auto;
+  background: var(--blanc);
+  border: 1px solid var(--bordure);
+  border-radius: var(--rayon);
+  box-shadow: var(--ombre);
+  padding: 2rem 2.2rem;
+  text-align: center;
+}
+
+.priere-card h3 { font-size: 1.15rem; margin-bottom: 0.9rem; color: var(--accent); }
+.priere-card p.priere-texte { font-family: var(--police-serif); font-size: 1.05rem; line-height: 1.8; margin-bottom: 0.8rem; }
+.priere-card .priere-source { color: var(--encre-douce); font-size: 0.85rem; font-weight: 600; }
+
+/* ---------- Jeu memory (enfants) ---------- */
+
+.memory-zone { max-width: 560px; margin: 0 auto; text-align: center; }
+
+.memory-stats {
+  display: flex;
+  justify-content: center;
+  gap: 1.6rem;
+  font-weight: 600;
+  color: var(--encre-douce);
+  margin-bottom: 1.2rem;
+}
+
+.memory-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.7rem;
+}
+
+.memory-card {
+  aspect-ratio: 1;
+  border-radius: 12px;
+  border: 2px solid var(--bordure);
+  background: var(--accent);
+  font-size: 1.9rem;
+  cursor: pointer;
+  color: transparent;
+  transition: background 0.2s, transform 0.15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--police);
+}
+
+.memory-card::before { content: "✝"; color: rgba(255,255,255,0.55); font-size: 1.3rem; position: absolute; }
+.memory-card { position: relative; }
+.memory-card:hover:not(:disabled) { transform: scale(1.04); }
+.memory-card.retournee, .memory-card.trouvee {
+  background: var(--blanc);
+  color: inherit;
+}
+.memory-card.retournee::before, .memory-card.trouvee::before { content: ""; }
+.memory-card.trouvee { border-color: #2f7a3d; background: #e8f4ea; cursor: default; }
+.memory-card:disabled { cursor: default; }
+
+.memory-bravo {
+  margin-top: 1.2rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background: #e8f4ea;
+  color: #205c2b;
+  font-weight: 600;
+  display: none;
+}
+.memory-bravo.show { display: block; }
+
+/* Records du quiz */
+.niveau-record { display: block; margin-top: 0.4rem; font-size: 0.78rem; font-weight: 700; color: var(--or); }
 
 /* ---------- Responsive ---------- */
 
