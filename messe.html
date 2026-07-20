@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Messe du dimanche — Lumière Biblique</title>
+  <meta name="description" content="Les lectures de la messe du dimanche : première lecture, psaume, deuxième lecture et évangile.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✝️</text></svg>">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">✝</span>
+        <span class="logo-text">Lumière<strong>Biblique</strong></span>
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="chatbot.html" class="nav-link">Assistant biblique</a>
+        <a href="messe.html" class="nav-link active">Messe</a>
+        <a href="enfants.html" class="nav-link">Espace enfants</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <section class="page-head">
+    <div class="container">
+      <h1>⛪ Messe du dimanche</h1>
+      <p>Retrouvez ici les lectures de la messe dominicale : première lecture, psaume, deuxième lecture et évangile, pour préparer votre cœur avant la célébration et méditer la Parole tout au long de la semaine.</p>
+    </div>
+  </section>
+
+  <main class="container messe-wrap">
+    <div class="messe-controls">
+      <button class="btn btn-secondary btn-small" id="dimanchePrec">← Dimanche précédent</button>
+      <input type="date" id="dateMesse" aria-label="Choisir une date">
+      <button class="btn btn-secondary btn-small" id="dimancheSuiv">Dimanche suivant →</button>
+    </div>
+
+    <h2 class="messe-date-title" id="messeDateTitle"></h2>
+    <p class="messe-liturgie" id="messeLiturgie"></p>
+
+    <div id="messeContenu">
+      <p class="messe-status">Chargement des lectures…</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p><span class="logo-mark">✝</span> Lumière Biblique — Lectures liturgiques fournies par l'<a href="https://www.aelf.org" target="_blank" rel="noopener">AELF</a></p>
+      <nav class="footer-nav">
+        <a href="chatbot.html">Assistant</a>
+        <a href="messe.html">Messe</a>
+        <a href="enfants.html">Enfants</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/common.js"></script>
+  <script src="js/messe.js"></script>
+</body>
+</html>

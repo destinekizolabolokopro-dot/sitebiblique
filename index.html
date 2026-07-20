@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumière Biblique — La Parole de Dieu pour tous</title>
+  <meta name="description" content="Assistant biblique, lectures de la messe du dimanche, espace enfants et quiz bibliques. Un site entièrement consacré à la Parole de Dieu.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✝️</text></svg>">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">✝</span>
+        <span class="logo-text">Lumière<strong>Biblique</strong></span>
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" class="nav-link active">Accueil</a>
+        <a href="chatbot.html" class="nav-link">Assistant biblique</a>
+        <a href="messe.html" class="nav-link">Messe</a>
+        <a href="enfants.html" class="nav-link">Espace enfants</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Héro : verset du jour -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="hero-kicker">Verset du jour</p>
+        <blockquote class="hero-verse" id="versetDuJour">
+          « Ta parole est une lampe à mes pieds, et une lumière sur mon sentier. »
+        </blockquote>
+        <p class="hero-ref" id="versetRef">Psaume 119:105</p>
+        <div class="hero-actions">
+          <a href="chatbot.html" class="btn btn-primary">Poser une question à l'assistant</a>
+          <a href="messe.html" class="btn btn-secondary">Lectures du dimanche</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cartes des sections -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Découvrez le site</h2>
+        <p class="section-subtitle">Un espace entièrement consacré à la Bible et à la foi chrétienne.</p>
+        <div class="cards-grid">
+          <a href="chatbot.html" class="card">
+            <div class="card-icon">💬</div>
+            <h3>Assistant biblique</h3>
+            <p>Posez toutes vos questions sur la Bible : recherche de versets, étymologie des mots bibliques, sens des passages, conseils spirituels. Un assistant fidèle à la Parole, comme un prêtre à votre écoute.</p>
+            <span class="card-link">Ouvrir l'assistant →</span>
+          </a>
+          <a href="messe.html" class="card">
+            <div class="card-icon">⛪</div>
+            <h3>Messe du dimanche</h3>
+            <p>Retrouvez chaque semaine les lectures de la messe dominicale : première lecture, psaume, deuxième lecture et évangile, pour préparer et méditer la liturgie.</p>
+            <span class="card-link">Voir les lectures →</span>
+          </a>
+          <a href="enfants.html" class="card">
+            <div class="card-icon">🧒</div>
+            <h3>Espace enfants</h3>
+            <p>Un coin dédié aux plus jeunes : histoires de la Bible racontées simplement, versets à retenir et quiz bibliques à trois niveaux — amateur, moyen et pro !</p>
+            <span class="card-link">Entrer dans l'espace enfants →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bandeau citation -->
+    <section class="banner">
+      <div class="container">
+        <p class="banner-verse">« Que ta volonté soit faite sur la terre comme au ciel. »</p>
+        <p class="banner-ref">Matthieu 6:10</p>
+      </div>
+    </section>
+
+    <!-- Comment ça marche -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Comment utiliser l'assistant ?</h2>
+        <div class="steps-grid">
+          <div class="step">
+            <div class="step-num">1</div>
+            <h3>Posez votre question</h3>
+            <p>« Que dit la Bible sur le pardon ? », « Quelle est l'étymologie du mot Amen ? », « Montre-moi Jean 3:16 »…</p>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <h3>Recevez une réponse biblique</h3>
+            <p>L'assistant répond toujours à partir des Écritures, avec les références des versets, dans un esprit chrétien et bienveillant.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <h3>Méditez la Parole</h3>
+            <p>Approfondissez votre foi, découvrez de nouveaux passages et grandissez dans la connaissance de Dieu.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p><span class="logo-mark">✝</span> Lumière Biblique — « Ta parole est la vérité. » (Jean 17:17)</p>
+      <nav class="footer-nav">
+        <a href="chatbot.html">Assistant</a>
+        <a href="messe.html">Messe</a>
+        <a href="enfants.html">Enfants</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/bible-data.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>

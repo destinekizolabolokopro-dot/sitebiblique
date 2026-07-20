@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assistant biblique — Lumière Biblique</title>
+  <meta name="description" content="Posez toutes vos questions sur la Bible : versets, étymologie, personnages, conseils spirituels. Un assistant entièrement biblique.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✝️</text></svg>">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">✝</span>
+        <span class="logo-text">Lumière<strong>Biblique</strong></span>
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="chatbot.html" class="nav-link active">Assistant biblique</a>
+        <a href="messe.html" class="nav-link">Messe</a>
+        <a href="enfants.html" class="nav-link">Espace enfants</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <section class="page-head">
+    <div class="container">
+      <h1>💬 Assistant biblique</h1>
+      <p>Posez vos questions sur la Parole de Dieu : recherche de versets, étymologie des mots bibliques, personnages, conseils spirituels. Cet assistant est entièrement consacré à la Bible et à la foi chrétienne.</p>
+    </div>
+  </section>
+
+  <main class="container chat-layout">
+    <div class="chat-box">
+      <div class="chat-messages" id="chatMessages"></div>
+      <form class="chat-input-row" id="chatForm">
+        <input type="text" id="chatInput" placeholder="Écrivez votre question ici… (ex. : Que dit la Bible sur le pardon ?)" autocomplete="off" required>
+        <button type="submit" class="btn btn-primary btn-small">Envoyer</button>
+      </form>
+    </div>
+
+    <aside class="chat-side">
+      <div class="side-card">
+        <span class="mode-badge" id="modeBadge">Mode local</span>
+        <h3>Questions suggérées</h3>
+        <div class="suggestions">
+          <button class="suggestion-btn" data-q="Que dit la Bible sur la peur ?">Que dit la Bible sur la peur ?</button>
+          <button class="suggestion-btn" data-q="Montre-moi Jean 3:16">Montre-moi Jean 3:16</button>
+          <button class="suggestion-btn" data-q="Quelle est l'étymologie du mot Amen ?">Étymologie du mot « Amen »</button>
+          <button class="suggestion-btn" data-q="Qui est Moïse ?">Qui est Moïse ?</button>
+          <button class="suggestion-btn" data-q="Comment prier ?">Comment prier ?</button>
+          <button class="suggestion-btn" data-q="Que dit la Bible sur le pardon ?">Que dit la Bible sur le pardon ?</button>
+        </div>
+      </div>
+
+      <div class="side-card">
+        <h3>🤖 Mode IA (facultatif)</h3>
+        <p class="side-note" style="margin-bottom:0.6rem;">
+          Par défaut, l'assistant répond grâce à sa bibliothèque intégrée de versets. Pour des réponses
+          approfondies générées par l'IA Claude (toujours strictement bibliques), saisissez une clé API Anthropic.
+          La clé reste uniquement dans votre navigateur.
+        </p>
+        <input type="password" class="api-field" id="apiKeyInput" placeholder="Clé API Anthropic (sk-ant-…)">
+        <button class="btn btn-secondary btn-small" id="apiKeySave">Activer le mode IA</button>
+        <button class="btn btn-secondary btn-small" id="apiKeyClear" style="display:none;">Désactiver</button>
+      </div>
+
+      <div class="side-card">
+        <h3>📖 Ce que sait faire l'assistant</h3>
+        <p class="side-note">
+          • Trouver des versets par thème (peur, amour, pardon…)<br>
+          • Afficher un verset par sa référence (ex. « Psaume 23:1 »)<br>
+          • Expliquer l'étymologie des mots bibliques<br>
+          • Présenter les grands personnages de la Bible<br>
+          • Donner un conseil spirituel fondé sur les Écritures<br><br>
+          Il ne répond qu'aux questions liées à la Bible et à la foi chrétienne.
+        </p>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p><span class="logo-mark">✝</span> Lumière Biblique — « Ta parole est la vérité. » (Jean 17:17)</p>
+      <nav class="footer-nav">
+        <a href="chatbot.html">Assistant</a>
+        <a href="messe.html">Messe</a>
+        <a href="enfants.html">Enfants</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/bible-data.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/chatbot.js"></script>
+</body>
+</html>
