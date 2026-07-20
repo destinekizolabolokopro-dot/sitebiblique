@@ -28,15 +28,15 @@
 
   <section class="enfants-hero">
     <div class="container">
-      <h1>🧒 Espace enfants</h1>
-      <p>Bienvenue, petits amis de Jésus ! Ici, tu peux découvrir les plus belles histoires de la Bible, apprendre des versets… et tester tes connaissances avec nos quiz !</p>
+      <h1>Espace enfants</h1>
+      <p>Bienvenue, petits amis de Jésus ! Ici, tu peux découvrir les plus belles histoires de la Bible, apprendre des versets et tester tes connaissances avec nos jeux.</p>
     </div>
   </section>
 
   <!-- Histoires de la Bible -->
   <section class="section">
     <div class="container">
-      <h2 class="section-title">📚 Les belles histoires de la Bible</h2>
+      <h2 class="section-title">Les belles histoires de la Bible</h2>
       <p class="section-subtitle">Des récits merveilleux et vrais, racontés pour toi.</p>
       <div class="histoires-grid">
         <div class="histoire-card">
@@ -91,10 +91,30 @@
     </div>
   </section>
 
+  <!-- Verset de la semaine + prière -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Ton coin à toi</h2>
+      <p class="section-subtitle">Un verset à apprendre par cœur et une prière rien que pour toi.</p>
+      <div class="cards-grid" style="max-width:900px;margin-left:auto;margin-right:auto;">
+        <div class="card card-static">
+          <h3>Le verset de la semaine</h3>
+          <p>Apprends-le par cœur et récite-le à quelqu'un que tu aimes :</p>
+          <span class="verse-quote" id="versetSemaine">« Je puis tout par celui qui me fortifie. » — Philippiens 4:13</span>
+        </div>
+        <div class="card card-static">
+          <h3>Une prière pour toi</h3>
+          <p class="priere-texte" style="font-family:var(--police-serif);">« Merci Jésus pour cette journée, pour ma famille et mes amis. Aide-moi à être gentil, courageux et honnête, et garde tous ceux que j'aime. Amen. »</p>
+          <p style="color:var(--encre-douce);font-size:0.85rem;">Tu peux la dire le matin, le soir, ou quand tu veux : Jésus t'écoute toujours.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Jeu memory -->
   <section class="section" id="memory">
     <div class="container memory-zone">
-      <h2 class="section-title">🃏 Le memory de la Bible</h2>
+      <h2 class="section-title">Le memory de la Bible</h2>
       <p class="section-subtitle">Retrouve les paires de symboles bibliques en un minimum de coups !</p>
       <div class="memory-stats">
         <span>Coups : <span id="memoryCoups">0</span></span>
@@ -102,30 +122,30 @@
       </div>
       <div class="memory-grid" id="memoryGrid"></div>
       <div class="memory-bravo" id="memoryBravo"></div>
-      <p style="margin-top:1.2rem;"><button class="btn btn-secondary btn-small" id="memoryRejouer">🔄 Nouvelle partie</button></p>
+      <p style="margin-top:1.2rem;"><button class="btn btn-secondary btn-small" id="memoryRejouer">Nouvelle partie</button></p>
     </div>
   </section>
 
   <!-- Quiz -->
   <section class="section section-alt" id="quiz">
     <div class="container quiz-zone">
-      <h2 class="section-title">🎯 Le grand quiz biblique</h2>
+      <h2 class="section-title">Le grand quiz biblique</h2>
       <p class="section-subtitle">Choisis ton niveau et montre ce que tu connais de la Bible !</p>
 
       <!-- Choix du niveau -->
       <div class="niveaux-grid" id="choixNiveau">
         <button class="niveau-card" data-niveau="amateur">
-          <div class="niveau-icon">🌱</div>
+          <div class="niveau-badge">I</div>
           <h3>Amateur</h3>
           <p>Pour bien commencer : les histoires les plus connues de la Bible.</p>
         </button>
         <button class="niveau-card" data-niveau="moyen">
-          <div class="niveau-icon">🌿</div>
+          <div class="niveau-badge">II</div>
           <h3>Moyen</h3>
           <p>Tu connais déjà bien la Bible ? Prouve-le !</p>
         </button>
         <button class="niveau-card" data-niveau="pro">
-          <div class="niveau-icon">🌳</div>
+          <div class="niveau-badge">III</div>
           <h3>Pro</h3>
           <p>Le niveau des champions de la Parole. Bon courage !</p>
         </button>
@@ -153,7 +173,7 @@
         <p id="resultTexte"></p>
         <span class="verse-quote" id="resultVerset"></span>
         <div>
-          <button class="btn btn-primary" id="rejouerBtn">Rejouer 🎮</button>
+          <button class="btn btn-primary" id="rejouerBtn">Rejouer</button>
           <button class="btn btn-secondary" id="changerNiveauBtn">Changer de niveau</button>
         </div>
       </div>
@@ -171,6 +191,7 @@
     </div>
   </footer>
 
+  <script src="js/bible-data.js"></script>
   <script src="js/common.js"></script>
   <script src="js/quiz-data.js"></script>
   <script src="js/quiz.js"></script>

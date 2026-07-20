@@ -213,6 +213,35 @@ a { color: inherit; text-decoration: none; }
 }
 
 .card-icon { font-size: 2.1rem; }
+
+/* Icônes SVG professionnelles */
+.icon-disc {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: var(--fond-alt);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-disc svg { width: 26px; height: 26px; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+
+.card-static { cursor: default; }
+.card-static:hover { transform: none; box-shadow: var(--ombre); }
+
+.etape-num {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--fond-alt);
+  color: var(--accent);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .card h3 { font-size: 1.15rem; }
 .card p { color: var(--encre-douce); font-size: 0.95rem; flex: 1; }
 .card-link { color: var(--accent); font-weight: 600; font-size: 0.93rem; }
@@ -393,8 +422,35 @@ a { color: inherit; text-decoration: none; }
 
 .msg-row .msg { max-width: 100%; }
 
+/* Personnage grand format (style jeu vidéo, à la Akinator) */
+.guide-figure {
+  display: flex;
+  justify-content: center;
+  padding: 0.6rem 0 0.2rem;
+}
+
+.guide-figure svg {
+  height: 230px;
+  width: auto;
+  filter: drop-shadow(0 6px 14px rgba(38, 34, 28, 0.15));
+}
+
+.guide-nom {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 0.2rem;
+}
+
+.guide-role {
+  text-align: center;
+  color: var(--encre-douce);
+  font-size: 0.82rem;
+  margin-bottom: 0.9rem;
+}
+
 /* Sélecteur d'avatar */
-.avatar-choices { display: flex; gap: 0.6rem; margin-bottom: 0.6rem; }
+.avatar-choices { display: flex; gap: 0.6rem; margin-bottom: 0.6rem; justify-content: center; }
 
 .avatar-choice {
   width: 54px;
@@ -639,6 +695,21 @@ a { color: inherit; text-decoration: none; }
 .niveau-card:hover { transform: translateY(-3px); border-color: var(--accent); box-shadow: var(--ombre); }
 
 .niveau-card .niveau-icon { font-size: 2rem; margin-bottom: 0.5rem; }
+
+.niveau-badge {
+  width: 44px;
+  height: 44px;
+  margin: 0 auto 0.7rem;
+  border-radius: 50%;
+  background: var(--fond-alt);
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.05em;
+}
 .niveau-card h3 { font-size: 1.1rem; margin-bottom: 0.3rem; }
 .niveau-card p { color: var(--encre-douce); font-size: 0.88rem; }
 

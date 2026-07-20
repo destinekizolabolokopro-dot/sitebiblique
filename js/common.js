@@ -30,6 +30,14 @@
     });
   }
 
+  // Verset de la semaine (espace enfants, roulement hebdomadaire)
+  const versetSemaine = document.getElementById("versetSemaine");
+  if (versetSemaine && typeof VERSETS_DU_JOUR !== "undefined") {
+    const semaine = Math.floor(Date.now() / (7 * 86400000));
+    const v = VERSETS_DU_JOUR[semaine % VERSETS_DU_JOUR.length];
+    versetSemaine.textContent = "« " + v.texte + " » — " + v.ref;
+  }
+
   // Prière du jour (roulement quotidien)
   const priereTexte = document.getElementById("priereTexte");
   if (priereTexte && typeof PRIERES !== "undefined") {

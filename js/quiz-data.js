@@ -208,7 +208,7 @@ const QUIZ = {
 };
 
 const QUIZ_NIVEAUX = {
-  amateur: { label: "Niveau amateur 🌱", verset: "« Laissez venir à moi les petits enfants. » — Marc 10:14" },
-  moyen: { label: "Niveau moyen 🌿", verset: "« Ta parole est une lampe à mes pieds. » — Psaume 119:105" },
-  pro: { label: "Niveau pro 🌳", verset: "« Que la parole de Christ habite parmi vous abondamment. » — Colossiens 3:16" },
+  amateur: { label: "Niveau Amateur", verset: "« Laissez venir à moi les petits enfants. » — Marc 10:14" },
+  moyen: { label: "Niveau Moyen", verset: "« Ta parole est une lampe à mes pieds. » — Psaume 119:105" },
+  pro: { label: "Niveau Pro", verset: "« Que la parole de Christ habite parmi vous abondamment. » — Colossiens 3:16" },
 };

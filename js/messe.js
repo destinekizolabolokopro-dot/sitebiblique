@@ -81,6 +81,12 @@
       corps.appendChild(intro);
     }
 
+    if (lecture.refrain_psalmique) {
+      const refrain = document.createElement("p");
+      refrain.innerHTML = "<strong>R/ " + nettoyerHTML(lecture.refrain_psalmique) + "</strong>";
+      corps.appendChild(refrain);
+    }
+
     const texte = nettoyerHTML(lecture.contenu);
     texte.split(/\n+/).forEach(function (par) {
       if (!par.trim()) return;
@@ -98,6 +104,38 @@
     return carte;
   }
 
+  function afficherLectures(titre, lectures) {
+    if (titre) liturgieEl.textContent = titre;
+
+    const wrap = document.createElement("div");
+    wrap.className = "lectures";
+
+    // On trie les lectures selon l'ordre liturgique
+    const triees = lectures.slice().sort(function (a, b) {
+      const ia = ORDRE.indexOf(a.type), ib = ORDRE.indexOf(b.type);
+      return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib);
+    });
+
+    triees.forEach(function (lecture) {
+      wrap.appendChild(carteLecture(lecture.type, lecture));
+    });
+
+    contenuEl.innerHTML = "";
+    contenuEl.appendChild(wrap);
+  }
+
+  // Lectures intégrées au site (js/messe-data.js), utilisées si l'API est injoignable
+  function lecturesIntegrees(iso) {
+    if (typeof MESSE_DATA === "undefined" || !MESSE_DATA[iso]) return null;
+    const entree = MESSE_DATA[iso];
+    return {
+      titre: entree.titre,
+      lectures: entree.lectures.map(function (l) {
+        return { type: l.type, titre: l.titre, ref: l.ref, intro_lue: l.intro, refrain_psalmique: l.refrain, contenu: l.contenu };
+      }),
+    };
+  }
+
   async function chargerLectures(d) {
     majTitre(d);
     liturgieEl.textContent = "";
@@ -112,30 +150,20 @@
       const messe = (data.messes && data.messes[0]) || null;
       if (!messe || !messe.lectures || !messe.lectures.length) throw new Error("Aucune lecture");
 
-      if (data.informations && data.informations.ligne1) {
-        liturgieEl.textContent = data.informations.ligne1 + (data.informations.ligne2 ? " — " + data.informations.ligne2 : "");
-      }
-
-      const wrap = document.createElement("div");
-      wrap.className = "lectures";
-
-      // On trie les lectures selon l'ordre liturgique
-      const lectures = messe.lectures.slice().sort(function (a, b) {
-        const ia = ORDRE.indexOf(a.type), ib = ORDRE.indexOf(b.type);
-        return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib);
-      });
-
-      lectures.forEach(function (lecture) {
-        wrap.appendChild(carteLecture(lecture.type, lecture));
-      });
-
-      contenuEl.innerHTML = "";
-      contenuEl.appendChild(wrap);
+      const titre = data.informations && data.informations.ligne1
+        ? data.informations.ligne1 + (data.informations.ligne2 ? " — " + data.informations.ligne2 : "")
+        : "";
+      afficherLectures(titre, messe.lectures);
     } catch (e) {
+      const local = lecturesIntegrees(iso);
+      if (local) {
+        afficherLectures(local.titre, local.lectures);
+        return;
+      }
       contenuEl.innerHTML =
         '<p class="messe-status">Impossible de charger les lectures pour cette date (connexion internet requise).<br>' +
         'Vous pouvez consulter directement les lectures du jour sur le site officiel : ' +
-        '<a href="https://www.aelf.org/' + iso + '/romain/messe" target="_blank" rel="noopener">aelf.org</a> 🙏</p>';
+        '<a href="https://www.aelf.org/' + iso + '/romain/messe" target="_blank" rel="noopener">aelf.org</a></p>';
     }
   }
 

@@ -28,8 +28,8 @@
 
   <section class="page-head">
     <div class="container">
-      <h1>💬 Assistant biblique</h1>
-      <p>Pose-lui toutes tes questions sur la Bible : versets, étymologies, personnages, conseils pour la vie… Il est sympa, détendu, et 100% consacré à la Parole de Dieu.</p>
+      <h1>Assistant biblique</h1>
+      <p>Pose-lui toutes tes questions sur la Bible : versets, étymologies, personnages, conseils pour la vie. Un guide sympa et détendu, 100 % consacré à la Parole de Dieu.</p>
     </div>
   </section>
 
@@ -37,7 +37,9 @@
     <div class="chat-box">
       <div class="chat-messages" id="chatMessages"></div>
       <form class="chat-input-row" id="chatForm">
-        <button type="button" class="btn btn-secondary btn-small" id="btnSurprise" title="Verset surprise">🎲</button>
+        <button type="button" class="btn btn-secondary btn-small" id="btnSurprise" title="Verset surprise" aria-label="Verset surprise">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-3px;"><rect x="3.5" y="3.5" width="17" height="17" rx="4"/><circle cx="8.5" cy="8.5" r="1.4" fill="currentColor" stroke="none"/><circle cx="15.5" cy="8.5" r="1.4" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.4" fill="currentColor" stroke="none"/><circle cx="8.5" cy="15.5" r="1.4" fill="currentColor" stroke="none"/><circle cx="15.5" cy="15.5" r="1.4" fill="currentColor" stroke="none"/></svg>
+        </button>
         <input type="text" id="chatInput" placeholder="Écris ta question ici… (ex. : Que dit la Bible sur le pardon ?)" autocomplete="off" required>
         <button type="submit" class="btn btn-primary btn-small">Envoyer</button>
       </form>
@@ -45,13 +47,15 @@
 
     <aside class="chat-side">
       <div class="side-card">
-        <h3>🎨 Choisis ton guide</h3>
+        <div class="guide-figure" id="guideFigure"></div>
+        <p class="guide-nom" id="guideNom"></p>
+        <p class="guide-role" id="guideRole"></p>
         <div class="avatar-choices">
-          <button class="avatar-choice" data-avatar="homme" title="Frère Théo"></button>
-          <button class="avatar-choice" data-avatar="femme" title="Sœur Léa"></button>
-          <button class="avatar-choice" data-avatar="enfant" title="P'tit Sam"></button>
+          <button class="avatar-choice" data-avatar="homme" title="Théo"></button>
+          <button class="avatar-choice" data-avatar="femme" title="Léa"></button>
+          <button class="avatar-choice" data-avatar="enfant" title="Sam"></button>
         </div>
-        <p class="side-note">Frère Théo, Sœur Léa ou P'tit Sam : à toi de choisir qui t'accompagne !</p>
+        <p class="side-note" style="text-align:center;">Théo, Léa ou Sam : choisis qui t'accompagne.</p>
       </div>
 
       <div class="side-card">
@@ -64,13 +68,13 @@
           <button class="suggestion-btn" data-q="Qui est Moïse ?">Qui est Moïse ?</button>
           <button class="suggestion-btn" data-q="Comment prier ?">Comment prier ?</button>
           <button class="suggestion-btn" data-q="Que dit la Bible sur le pardon ?">Que dit la Bible sur le pardon ?</button>
-          <button class="suggestion-btn" data-q="Verset surprise !">🎲 Verset surprise !</button>
+          <button class="suggestion-btn" data-q="Verset surprise !">Verset surprise</button>
         </div>
-        <button class="btn btn-secondary btn-small" id="btnEffacer" style="margin-top:0.8rem;">🧹 Effacer la conversation</button>
+        <button class="btn btn-secondary btn-small" id="btnEffacer" style="margin-top:0.8rem;">Effacer la conversation</button>
       </div>
 
       <div class="side-card">
-        <h3>🤖 Mode IA (facultatif)</h3>
+        <h3>Mode IA (facultatif)</h3>
         <p class="side-note" style="margin-bottom:0.6rem;">
           Par défaut, l'assistant répond grâce à sa bibliothèque intégrée de versets. Pour des réponses
           approfondies générées par l'IA Claude (toujours 100% bibliques), colle une clé API Anthropic ici.
@@ -82,15 +86,17 @@
       </div>
 
       <div class="side-card">
-        <h3>📖 Ce qu'il sait faire</h3>
+        <h3>Ce qu'il sait faire</h3>
         <p class="side-note">
           • Trouver des versets par thème (peur, amour, pardon…)<br>
           • Afficher un verset par sa référence (ex. « Psaume 23:1 »)<br>
           • Expliquer l'étymologie des mots bibliques<br>
           • Présenter les grands personnages de la Bible<br>
-          • Offrir un verset surprise 🎲<br>
+          • Offrir un verset surprise<br>
           • Donner un conseil fondé sur les Écritures<br><br>
-          Par contre, hors Bible, il ne répond pas — c'est son truc à lui 😄
+          Hors Bible, il ne répond pas : c'est sa spécialité, et il s'y tient.
+          Pour les questions importantes, il t'invitera toujours à en parler à
+          tes parents, à un prêtre ou à un pasteur.
         </p>
       </div>
     </aside>

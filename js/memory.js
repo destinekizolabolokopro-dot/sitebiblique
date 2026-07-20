@@ -67,7 +67,7 @@
       paires++;
       pairesEl.textContent = paires + " / " + SYMBOLES.length;
       if (paires === SYMBOLES.length) {
-        bravoEl.textContent = "🎉 Bravo, tu as tout trouvé en " + coups + " coups ! « Cherchez, et vous trouverez » (Matthieu 7:7) 😄";
+        bravoEl.textContent = "Bravo, tu as tout trouvé en " + coups + " coups ! « Cherchez, et vous trouverez » (Matthieu 7:7)";
         bravoEl.classList.add("show");
       }
     } else {
