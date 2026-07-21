@@ -28,8 +28,10 @@
 
   <section class="enfants-hero">
     <div class="container">
+      <p style="margin-bottom:1rem;"><a href="index.html" class="btn btn-secondary btn-small">← Retour à l'accueil</a></p>
       <h1>Espace enfants</h1>
-      <p>Bienvenue, petits amis de Jésus ! Ici, tu peux découvrir les plus belles histoires de la Bible, apprendre des versets et tester tes connaissances avec nos jeux.</p>
+      <p>Bienvenue, petits amis de Jésus ! Ici, tu peux découvrir les plus belles histoires de la Bible, apprendre des versets et jouer à plein de jeux bibliques.</p>
+      <p style="margin-top:1rem;"><a href="#jeux" class="btn btn-primary">🎮 Voir tous les jeux</a></p>
     </div>
   </section>
 
@@ -111,8 +113,56 @@
     </div>
   </section>
 
+  <!-- Ludothèque : tous les jeux -->
+  <section class="section" id="jeux">
+    <div class="container">
+      <h2 class="section-title">🎮 La ludothèque biblique</h2>
+      <p class="section-subtitle">Choisis un jeu et amuse-toi tout en découvrant la Bible !</p>
+
+      <!-- Choix du jeu -->
+      <div class="jeux-grid" id="jeuxGrid">
+        <button class="jeu-card" data-jeu="vraifaux">
+          <div class="jeu-icon">✅</div>
+          <h3>Vrai ou Faux</h3>
+          <p>La phrase est-elle vraie ou fausse selon la Bible ?</p>
+        </button>
+        <button class="jeu-card" data-jeu="personnage">
+          <div class="jeu-icon">🔍</div>
+          <h3>Devine le personnage</h3>
+          <p>Trois indices pour retrouver le héros de la Bible.</p>
+        </button>
+        <button class="jeu-card" data-jeu="verset">
+          <div class="jeu-icon">📝</div>
+          <h3>Complète le verset</h3>
+          <p>Retrouve le mot qui manque dans le verset.</p>
+        </button>
+        <button class="jeu-card" data-jeu="creation">
+          <div class="jeu-icon">🌍</div>
+          <h3>Les jours de la Création</h3>
+          <p>Remets les jours de la Création dans le bon ordre.</p>
+        </button>
+        <button class="jeu-card" data-jeu="testament">
+          <div class="jeu-icon">📚</div>
+          <h3>Ancien ou Nouveau ?</h3>
+          <p>Ce livre est-il dans l'Ancien ou le Nouveau Testament ?</p>
+        </button>
+        <button class="jeu-card" data-jeu="motmystere">
+          <div class="jeu-icon">🔤</div>
+          <h3>Le mot mystère</h3>
+          <p>Devine le mot biblique lettre par lettre.</p>
+        </button>
+      </div>
+
+      <!-- Zone de jeu active -->
+      <div class="jeu-zone" id="jeuZone" style="display:none;">
+        <button class="btn btn-secondary btn-small" id="jeuRetour">← Retour aux jeux</button>
+        <div id="jeuContenu"></div>
+      </div>
+    </div>
+  </section>
+
   <!-- Jeu memory -->
-  <section class="section" id="memory">
+  <section class="section section-alt" id="memory">
     <div class="container memory-zone">
       <h2 class="section-title">Le memory de la Bible</h2>
       <p class="section-subtitle">Retrouve les paires de symboles bibliques en un minimum de coups !</p>
@@ -196,5 +246,7 @@
   <script src="js/quiz-data.js"></script>
   <script src="js/quiz.js"></script>
   <script src="js/memory.js"></script>
+  <script src="js/jeux-data.js"></script>
+  <script src="js/jeux.js"></script>
 </body>
 </html>
