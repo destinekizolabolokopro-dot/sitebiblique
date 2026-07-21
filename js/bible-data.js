@@ -178,16 +178,33 @@ const ETYMOLOGIES = {
 
 // ----- Grands personnages bibliques (pour l'assistant) -----
 const PERSONNAGES = {
+  "jesus": "Jésus-Christ est le Fils de Dieu, né à Bethléem de la Vierge Marie. Il a annoncé le Royaume de Dieu, guéri les malades et fait de nombreux miracles. Mort sur la croix pour nous sauver de nos péchés, il est ressuscité le troisième jour. Il est le cœur de toute la foi chrétienne : « Je suis le chemin, la vérité et la vie » (Jean 14:6).",
+  "christ": "« Christ » signifie « l'Oint », le Messie annoncé par les prophètes. C'est Jésus de Nazareth, le Fils de Dieu, mort et ressuscité pour le salut du monde (Jean 3:16).",
+  "dieu": "Dieu est le Créateur du ciel et de la terre, éternel, tout-puissant et plein d'amour. Les chrétiens le connaissent comme un seul Dieu en trois personnes : le Père, le Fils (Jésus) et le Saint-Esprit (Matthieu 28:19). « Dieu est amour » (1 Jean 4:8).",
+  "saint-esprit": "Le Saint-Esprit est la troisième personne de la Trinité : l'Esprit de Dieu, envoyé par Jésus pour guider, consoler et fortifier les croyants. Il est descendu sur les apôtres à la Pentecôte (Actes 2).",
+  "esprit saint": "Le Saint-Esprit est l'Esprit de Dieu, envoyé par Jésus pour guider et fortifier les croyants. Il est descendu sur les apôtres à la Pentecôte (Actes 2).",
+  "marie": "Marie, humble jeune fille de Nazareth, a dit « oui » à Dieu lors de l'Annonciation et est devenue la mère de Jésus. Un modèle de foi et de confiance (Luc 1:38).",
+  "joseph": "Joseph, charpentier de Nazareth, est l'époux de Marie et le père adoptif de Jésus. Homme juste, il a protégé la Sainte Famille (Matthieu 1-2). (Dans l'Ancien Testament, Joseph est aussi le fils de Jacob, vendu par ses frères et devenu gouverneur d'Égypte — Genèse 37-45.)",
   "moise": "Moïse a libéré le peuple d'Israël de l'esclavage en Égypte et reçu les Dix Commandements au Sinaï (Exode 3 ; Exode 20).",
   "abraham": "Abraham est le père des croyants : il a tout quitté sur l'appel de Dieu, qui lui a promis une descendance aussi nombreuse que les étoiles (Genèse 12).",
+  "isaac": "Isaac est le fils promis à Abraham et Sara dans leur vieillesse. Sa naissance montre que rien n'est impossible à Dieu (Genèse 21).",
+  "jacob": "Jacob, fils d'Isaac, a reçu le nom d'« Israël ». Ses douze fils sont à l'origine des douze tribus d'Israël (Genèse 32).",
   "david": "David, jeune berger devenu roi, a vaincu le géant Goliath par sa confiance en Dieu et écrit de nombreux Psaumes (1 Samuel 17).",
-  "marie": "Marie a dit « oui » à Dieu et est devenue la mère de Jésus. Un modèle de foi et de confiance (Luc 1:38).",
+  "goliath": "Goliath était le géant philistin qui défiait l'armée d'Israël. Le jeune David l'a vaincu avec une simple fronde, au nom de l'Éternel (1 Samuel 17).",
   "paul": "Paul persécutait les chrétiens avant sa rencontre avec le Christ sur le chemin de Damas. Devenu apôtre, il a écrit une grande partie du Nouveau Testament (Actes 9).",
   "pierre": "Pierre, pêcheur devenu premier des apôtres : « Tu es Pierre, et sur cette pierre je bâtirai mon Église » (Matthieu 16:18).",
+  "jean": "Jean est l'un des douze apôtres, « le disciple que Jésus aimait ». Il a écrit un Évangile, trois lettres et l'Apocalypse (Jean 21:20).",
   "noe": "Noé a construit l'arche sur l'ordre de Dieu et a été sauvé du déluge. L'arc-en-ciel est le signe de cette alliance (Genèse 6-9).",
   "jonas": "Jonas a fui sa mission, a passé trois jours dans un grand poisson, puis a obéi à Dieu. Un signe de la résurrection selon Jésus (Matthieu 12:40).",
   "salomon": "Salomon a demandé à Dieu la sagesse plutôt que la richesse, et a bâti le premier Temple de Jérusalem (1 Rois 3).",
+  "daniel": "Daniel est resté fidèle à Dieu, même jeté dans la fosse aux lions. Dieu l'a protégé en fermant la gueule des lions (Daniel 6).",
+  "samson": "Samson était un juge d'Israël d'une force extraordinaire, dont le secret était sa consécration à Dieu (Juges 13-16).",
+  "elie": "Élie est un grand prophète qui a défendu la foi au vrai Dieu. Il fut enlevé au ciel dans un char de feu (2 Rois 2:11).",
   "jean-baptiste": "Jean-Baptiste a préparé la venue du Messie et baptisé Jésus dans le Jourdain : « l'Agneau de Dieu » (Jean 1:29).",
+  "adam": "Adam est le premier homme créé par Dieu, à son image, et placé dans le jardin d'Éden avec Ève (Genèse 2).",
+  "eve": "Ève est la première femme, créée par Dieu comme compagne d'Adam. Ils sont les premiers parents de l'humanité (Genèse 2-3).",
+  "thomas": "Thomas est l'apôtre qui a douté de la résurrection avant de voir Jésus vivant. « Heureux ceux qui n'ont pas vu, et qui ont cru ! » (Jean 20:29).",
+  "judas": "Judas Iscariote est l'apôtre qui a trahi Jésus pour trente pièces d'argent (Matthieu 26:15).",
 };
 
 // ----- Prières du jour (roulement quotidien) -----

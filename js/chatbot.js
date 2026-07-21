@@ -166,9 +166,15 @@ Règles absolues :
   }
 
   function chercherPersonnage(question) {
-    if (!/qui est|qui etait|parle moi de|raconte|histoire de/.test(question)) return null;
-    for (const nom in PERSONNAGES) {
-      if (question.includes(nom)) return PERSONNAGES[nom];
+    // Se déclenche avec une vraie question OU une requête courte (« jesus », « qui jesus »)
+    const declencheur = /qui est|qui etait|qui c est|c est qui|c est quoi|parle moi de|parle moi du|raconte|histoire de|presente|connais tu|explique/.test(question);
+    const court = question.split(" ").length <= 3;
+    if (!declencheur && !court) return null;
+    // On teste les clés les plus longues d'abord (« jean-baptiste » avant « jean »)
+    const cles = Object.keys(PERSONNAGES).sort(function (a, b) { return b.length - a.length; });
+    for (const nom of cles) {
+      const variantes = [nom, nom.replace(/-/g, " ")];
+      if (variantes.some(function (v) { return question.includes(v); })) return PERSONNAGES[nom];
     }
     return null;
   }
