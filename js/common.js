@@ -48,4 +48,25 @@
     priereTexte.textContent = p.texte;
     document.getElementById("priereSource").textContent = p.source;
   }
+
+  // Révélation douce au défilement (sans toucher au HTML)
+  const reduit = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const cibles = document.querySelectorAll(
+    ".card, .histoire-card, .jeu-card, .lecture-card, .niveau-card, .step, .priere-card, .memory-zone"
+  );
+  if (!reduit && "IntersectionObserver" in window && cibles.length) {
+    cibles.forEach(function (el, i) {
+      el.classList.add("reveal");
+      el.style.transitionDelay = (i % 4) * 60 + "ms";
+    });
+    const obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("vu");
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+    cibles.forEach(function (el) { obs.observe(el); });
+  }
 })();
