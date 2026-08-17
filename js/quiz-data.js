@@ -66,6 +66,24 @@ const QUIZ = {
       bonne: 1,
       explication: "Dieu a créé Adam et Ève et les a placés dans le jardin d'Éden (Genèse 2).",
     },
+    {
+      q: "Dans quel animal Jésus est-il entré à Jérusalem le jour des Rameaux ?",
+      choix: ["Un cheval", "Un âne", "Un chameau", "À pied"],
+      bonne: 1,
+      explication: "Jésus est entré humblement sur un ânon (Matthieu 21:7).",
+    },
+    {
+      q: "Qui a guidé les mages jusqu'à l'enfant Jésus ?",
+      choix: ["Un ange", "Une étoile", "Un berger", "Le roi Hérode"],
+      bonne: 1,
+      explication: "Une étoile les a conduits jusqu'à Bethléem (Matthieu 2:9).",
+    },
+    {
+      q: "Combien de disciples proches Jésus a-t-il choisis ?",
+      choix: ["3", "7", "12", "24"],
+      bonne: 2,
+      explication: "Jésus a choisi douze apôtres (Marc 3:14).",
+    },
   ],
 
   moyen: [
@@ -128,6 +146,24 @@ const QUIZ = {
       choix: ["Ne pas voler", "Honorer ses parents", "Aimer Dieu de tout son cœur", "Respecter le sabbat"],
       bonne: 2,
       explication: "« Tu aimeras le Seigneur, ton Dieu, de tout ton cœur » — et son prochain comme soi-même (Marc 12:30-31).",
+    },
+    {
+      q: "Quel prophète a été jeté dans une fosse aux lions ?",
+      choix: ["Ésaïe", "Daniel", "Jérémie", "Ézéchiel"],
+      bonne: 1,
+      explication: "Daniel est resté fidèle à Dieu, qui a fermé la gueule des lions (Daniel 6).",
+    },
+    {
+      q: "Combien de personnes Jésus a-t-il nourries avec cinq pains et deux poissons ?",
+      choix: ["Environ 500", "Environ 1 000", "Environ 5 000", "Environ 10 000"],
+      bonne: 2,
+      explication: "Environ cinq mille hommes, sans compter les femmes et les enfants (Matthieu 14:21).",
+    },
+    {
+      q: "Qui était le frère de Moïse, premier grand prêtre d'Israël ?",
+      choix: ["Aaron", "Josué", "Caleb", "Nadab"],
+      bonne: 0,
+      explication: "Aaron, le frère de Moïse, fut le premier grand prêtre (Exode 28).",
     },
   ],
 
@@ -203,6 +239,24 @@ const QUIZ = {
       choix: ["En huile", "En lait", "En vin", "En miel"],
       bonne: 2,
       explication: "À Cana, Jésus a changé l'eau en vin : son premier miracle (Jean 2:1-11).",
+    },
+    {
+      q: "Quel apôtre a renié Jésus trois fois avant le chant du coq ?",
+      choix: ["Jean", "Pierre", "Jacques", "André"],
+      bonne: 1,
+      explication: "Pierre a renié Jésus trois fois, puis a pleuré amèrement (Luc 22:61-62).",
+    },
+    {
+      q: "Sur quelle montagne l'arche de Noé s'est-elle posée ?",
+      choix: ["Le mont Sinaï", "Le mont Ararat", "Le mont Nébo", "Le mont Carmel"],
+      bonne: 1,
+      explication: "L'arche s'est arrêtée sur les montagnes d'Ararat (Genèse 8:4).",
+    },
+    {
+      q: "Combien de temps Jésus a-t-il jeûné dans le désert ?",
+      choix: ["7 jours", "12 jours", "40 jours", "70 jours"],
+      bonne: 2,
+      explication: "Jésus a jeûné quarante jours et quarante nuits (Matthieu 4:2).",
     },
   ],
 };
